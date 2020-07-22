@@ -1,10 +1,33 @@
-## 					2020年普通高等学校招生全国统一考试 ##
+1: 使用Markdown语法生成一个README.md文件，预览为如下内容
 
-####																														理科数学
+# 阴天快乐
 
-##### 一, 选择题：本题共12小题，每小题5分，共60分。在每小题给出的四个选项中，有一项是符合题目要求的。
+###### 天空它像什么 爱情就像什么
 
-1. 已知集合**U** = \{-2,-1,0,1,2,3},**A** = \{-1,0,1},**B** = \{1,2},则
+> 几朵云在阴天忘了该往哪儿走
+
+思念和寂寞
+
+被吹进了左耳
+
+`printf("听阴天说什么");`
+
+* 在昏暗中的我
+
+  <p style='color: red')>Hello,world</p>
+
+  ```py
+  print("Hello,World")
+  ```
+
+  
+
+```html
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+```
+
 $$
-\mathcal{C}_u(\mathbf{A}\cup\mathrm{B}) = ()
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
 $$
+
