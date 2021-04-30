@@ -46,6 +46,29 @@ Four answers of sample input 2 are: XXX, ()X, (X), X().
 #include<bits/stdc++.h>
 using namespace std;
 
+const int64_t mod = 1e9+7;
+char s[3010];
+int64_t dp[3010][3010];
+
 int main(){
+    scanf("%s",s);
+    int n = strlen(s);
+    dp[0][0] = 1;
+    for(int i = 1; i <= n; i++){
+        if(s[i - 1] == '*'){
+            for(int j = 0; j <= n; j++){
+                dp[i][j] = (dp[i-1][j-1] + dp[i-1][j] + dp[i-1][j+1])%mod;
+            }
+        } else if (s[i-1]=='(') {
+            for(int j = 0; j <= n; j++){
+                dp[i][j] = dp[i-1][j-1];
+            }
+        } else {
+            for(int j = 0; j <= n; j++){
+                dp[i][j] = dp[i-1][j+1];
+            }
+        }
+    }
+    printf("%lld\n", dp[n][0]);
     return 0;
 }
